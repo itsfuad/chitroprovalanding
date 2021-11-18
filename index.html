@@ -6,16 +6,35 @@
     <title>Particle Js</title>
 </head>
 <body>
-    <img id="logo" src="image.png" hidden alt="">
-    <canvas id="canvas"></canvas>
-    <!--Social buttons-->
-    <div class="follow-me">
-        <div class="title">Follow me</div>
-        <div class="socials">
-            <a href="https://www.facebook.com/Chitroprova/" target="_blank"><img src="facebook-logo.svg" alt="" height="30px"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="instagram.svg" alt="" height="30px"></a>
-        </div>
+    <div class="preload">
+        <style>
+            .preload{
+                position: fixed;
+                height: 100vh;
+                width: 100vw;
+                background: linear-gradient(50deg, rgba(87, 65, 121, 0.767),rgba(139, 90, 72, 0.411));
+                font-family: Now;
+                color: aliceblue;
+                font-size: 5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+        <div class="text">Loading... 😒</div>
     </div>
+    <main style="display: none" id="main">
+        <img id="logo" src="image.png" hidden alt="">
+        <canvas id="canvas"></canvas>
+        <!--Social buttons-->
+        <div class="follow-me">
+            <div class="title">Follow me</div>
+            <div class="socials">
+                <a href="https://www.facebook.com/Chitroprova/" target="_blank"><img src="facebook-logo.svg" alt="" height="30px"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="instagram.svg" alt="" height="30px"></a>
+            </div>
+        </div>
+    </main>
     <script defer src="app.js"></script> 
 </body>
 </html>

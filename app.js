@@ -8,6 +8,9 @@ let particlesArray = [];
 let adjustX = -canvas.width;
 let adjustY = -canvas.height;
 
+const main = document.getElementById('main');
+const preload = document.getElementsByClassName('preload')[0];
+
 let imageData;
 const logo = new Image();
 logo.src = "image.png";
@@ -25,6 +28,10 @@ logo.onload = () => {
     //ctx.drawImage(logo, 0,0, canvas.width, canvas.height);
     imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
     createParticles();
+
+    main.style.display = "flex";
+    preload.style.display = "none";
+    console.log("L");
 }
 
 
@@ -118,7 +125,7 @@ function createParticles(){
            if (imageData.data[(y*4*imageData.width) + (x*4) + 3] > 128){
                let positionX = x;
                let positionY = y;
-               console.log(y);
+               //console.log(y);
                particlesArray.push(new Particle(positionX * 6 + adjustX * 2.5, positionY * 6 + adjustY * 2.5));
             }
         }
@@ -133,7 +140,7 @@ function animation(){
         particlesArray[i].update();
     }
     //ctx.drawImage(logo, 0,0, canvas.width, canvas.height);
-    connect();
+    //connect();
     requestAnimationFrame(animation);
 }
 

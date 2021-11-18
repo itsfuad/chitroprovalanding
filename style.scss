@@ -5,15 +5,17 @@
 }
 
 body{
-    height: 100vh;
-    width: 100vw;
-    background: url("cover.jpg");
-    background-size: cover;
-    background-position: center;
+    main{
+        height: 100vh;
+        width: 100vw;
+        background: url("cover.jpg");
+        background-size: cover;
+        background-position: center;
+    }
     overflow: hidden;
     #canvas{
         position: absolute;
-        background: linear-gradient(50deg, rgba(139, 109, 84, 0.836),rgba(43, 25, 77, 0.411));;
+        background: linear-gradient(50deg, rgba(63, 48, 88, 0.836),rgba(226, 133, 97, 0.411));
         background-size: cover;
         background-position: center;
         z-index: 1;
