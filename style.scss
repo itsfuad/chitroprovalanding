@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: url("cover.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    #canvas{
+        position: absolute;
+        background: linear-gradient(50deg, rgba(139, 109, 84, 0.836),rgba(43, 25, 77, 0.411));;
+        background-size: cover;
+        background-position: center;
+    }
+}
